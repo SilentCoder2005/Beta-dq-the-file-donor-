@@ -665,7 +665,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('Auto Delete',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('10 Mins' if settings["auto_delete"] '30 Mins' elif settings["thirty_mins"] else 'OFF',
+                    InlineKeyboardButton('10 Mins' if settings["auto_delete"] elif settings["thirty_mins"] '30 Mins' else 'OFF',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ]
             ]
